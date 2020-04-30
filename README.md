@@ -9,3 +9,29 @@ kbone API 的 TypeScript 类型定义文件
 ```sh
 yarn add kbone-typings
 ```
+
+## 使用
+
+`tsconfig.json` 中加入
+
+```json
+{
+  "compilerOptions": {
+    "types": [
+      // ...
+      "kbone-typings"
+      // ...
+    ]
+  }
+}
+```
+
+`miniprogram.config.js` 文件可用 [JSDoc](https://github.com/jsdoc/jsdoc) 方案进行类型推导
+
+```js
+/**
+ * @type {import('kbone-typings').KboneConfig}
+ */
+const miniprogramConfig = {}
+module.exports = miniprogramConfig
+```

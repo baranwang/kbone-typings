@@ -1,10 +1,18 @@
 {
   "name": "kbone-typings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "kbone API 的 TypeScript 类型定义文件",
   "main": "./index.d.ts",
   "types": "./index.d.ts",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baranwang/kbone-typings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baranwang/kbone-typings/issues"
+  },
+  "homepage": "https://github.com/baranwang/kbone-typings#readme",
   "author": "Baran <me@baran.wang>",
   "license": "MIT",
   "dependencies": {
