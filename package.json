@@ -1,0 +1,13 @@
+{
+  "name": "kbone-typings",
+  "version": "1.0.0",
+  "description": "kbone typings",
+  "main": "./index.d.ts",
+  "types": "./index.d.ts",
+  "scripts": {},
+  "author": "Baran <me@baran.wang>",
+  "license": "MIT",
+  "dependencies": {
+    "miniprogram-api-typings": "^2.10.4"
+  }
+}
