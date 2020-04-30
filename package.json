@@ -1,7 +1,7 @@
 {
   "name": "kbone-typings",
   "version": "1.0.0",
-  "description": "kbone typings",
+  "description": "kbone API 的 TypeScript 类型定义文件",
   "main": "./index.d.ts",
   "types": "./index.d.ts",
   "scripts": {},
