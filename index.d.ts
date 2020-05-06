@@ -1,10 +1,10 @@
-export interface KboneConfig {
+export interface KboneConfig<R = Record<string, string[]>> {
   origin: string;
   entry: string;
-  router: Record<string, string[]>;
+  router: R;
   redirect: Record<
     'notFound' | 'accessDenied',
-    'none' | 'webview' | 'error' | string
+    'none' | 'webview' | 'error' | keyof KboneConfig['router']
   >;
   generate: {
     app: 'defalut' | 'noemit' | 'noconfig';
@@ -23,7 +23,7 @@ export interface KboneConfig {
       backgroundColor: string;
       borderStyle: 'black' | 'white';
       list: Array<{
-        pageName: string;
+        pageName: keyof KboneConfig['router'];
         text: string;
         iconPath: string;
         selectedIconPath: string;
